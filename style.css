@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #e6f1ff;
+    background: #0f0f1b;
+    overflow-x: hidden;
+  }
+  
+  /* Partículas de fundo */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom right, #0f0f1b, #1c1c2d);
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: rgba(20, 20, 40, 0.85);
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 0 15px rgba(0, 255, 255, 0.1);
+    z-index: 1;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #00ffff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+    font-size: 16px;
+  }
+  
+  .sidebar li:hover {
+    background: rgba(0, 255, 255, 0.1);
+  }
+  
+  /* Conteúdo principal */
+  .content {
+    margin-left: 250px;
+    padding: 60px;
+    flex: 1;
+    min-height: 100vh;
+  }
+  
+  /* Seções com estilo glass */
+  .section {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.08);
+    max-width: 950px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e6f1ff;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  h1, h2, h3 {
+    color: #00ffff;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgba(20, 20, 40, 0.85);
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: auto;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Experiência Profissional */
+  .job-block {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 255, 255, 0.06);
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .empresa {
+    color: #1e90ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .job-block h3 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-style: italic;
+    color: #00e0e0;
+  }
+  
+  .job-block p {
+    font-size: 15.5px;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+  .video-feito {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+  }
+  
+  .btn-pdf {
+    display: inline-block;
+    margin-top: 15px;
+    background: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .btn-pdf:hover {
+    background: rgba(0, 255, 255, 0.2);
+  }
+  
